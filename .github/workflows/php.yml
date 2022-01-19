@@ -9,13 +9,9 @@ jobs:
       matrix:
         operating-system: [ ubuntu-20.04, ubuntu-18.04 ]
     steps:
-      - name: "List /usr/share"
-        run: ls -al /usr/share
-      - name: "List /usr/share/dotnet"
-        run: ls -al /usr/share/dotnet
       - name: "Show PHP Version"
-        run: php -v
+        run: php7.4 -v
       - name: "List PHP Extensions"
-        run: php -m
+        run: php7.4 -m
       - name: "Show PHP Info"
-        run: php -i
+        run: php7.4 -i
