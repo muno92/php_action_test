@@ -9,8 +9,10 @@ jobs:
       matrix:
         operating-system: [ ubuntu-20.04, ubuntu-18.04, macos-11, macos-10.15 ]
     steps:
-      - name: "Show PHP Path"
-        run: which php
+      - name: "List /usr/bin"
+        run: ls -al /usr/bin
+      - name: "List /usr/local/bin"
+        run: ls -al /usr/local/bin
       - name: "Show PHP Version"
         run: php -v
       - name: "List PHP Extensions"
