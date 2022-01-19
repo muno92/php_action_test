@@ -1,0 +1,1 @@
+GitHub ActionsでGitHub-hosted runnerを使った場合のPHPのバージョン・拡張を確認するためのプロジェクト
