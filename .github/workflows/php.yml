@@ -11,5 +11,6 @@ jobs:
     steps:
       - name: "List .NET SDK"
         run: dotnet --list-sdks
-      - name: "Search .NET SDK"
-        run: ls -al /usr/local/share/dotnet/sdk
+      - run: ls -al ~/.dotnet/sdk
+      - run: ls -al /usr/share
+      - run: ls -al /usr/local/share
