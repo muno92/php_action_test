@@ -7,13 +7,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        operating-system: [ ubuntu-20.04, ubuntu-18.04 ]
+        operating-system: [ macos-latest ]
     steps:
-      - name: "Show PHP Version"
-        run: php7.4 -v
-      - name: "check composer"
-        run: which composer
-      - name: "List PHP Extensions"
-        run: php7.4 -m
-      - name: "Show PHP Info"
-        run: php7.4 -i
+      - name: "List .NET SDK"
+        run: dotnet --list-sdks
+      - name: "Search .NET SDK"
+        run: ls -al /usr/local/share/dotnet/sdk
