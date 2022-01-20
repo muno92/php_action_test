@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: "Show PHP Version"
         run: php7.4 -v
+      - name: "check composer"
+        run: which composer
       - name: "List PHP Extensions"
         run: php7.4 -m
       - name: "Show PHP Info"
