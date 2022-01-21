@@ -7,10 +7,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        operating-system: [ macos-latest ]
+        operating-system: [ ubuntu-latest ]
     steps:
-      - name: "List .NET SDK"
-        run: dotnet --list-sdks
-      - run: ls -al ~/.dotnet/sdk
-      - run: ls -al /usr/share
-      - run: ls -al /usr/local/share
+      - name: "Set Environment Variable"
+        run: export TEST_A=a
+      - run: TEST_B=b php env_test.php
+        env:
+          TEST_C: c
