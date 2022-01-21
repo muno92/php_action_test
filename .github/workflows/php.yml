@@ -11,6 +11,6 @@ jobs:
     steps:
       - name: "Set Environment Variable"
         run: export TEST_A=a
-      - run: TEST_B=b php env_test.php
+      - run: TEST_B=b php ./env_test.php
         env:
           TEST_C: c
