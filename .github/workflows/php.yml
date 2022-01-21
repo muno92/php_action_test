@@ -9,6 +9,7 @@ jobs:
       matrix:
         operating-system: [ ubuntu-latest ]
     steps:
+      - uses: actions/checkout@v2
       - name: "Set Environment Variable"
         run: export TEST_A=a
       - run: TEST_B=b php ./env_test.php
